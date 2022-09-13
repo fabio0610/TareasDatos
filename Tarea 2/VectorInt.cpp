@@ -58,3 +58,13 @@ void VectorInt::ChangeValueAt(unsigned int pos, int dato) {
     }
 }
 
+unsigned int VectorInt::Cantidad() const {
+    int cont = 0;
+    for (int i = 0; i< conteo; i++){
+        if( inicio[i]=! nullptr){
+            cont++;
+        }
+    }
+    return cont;
+}
+
